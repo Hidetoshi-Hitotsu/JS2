@@ -39,9 +39,9 @@ $(document).ready(function(){
       intervalId3 = setInterval(function(){
         //ここに処理を書く
         count3++;
-        if(count3<=9 ){
+        if(count3<=59 ){
           time3.innerHTML = count3;
-        }else if(count3 == 10){
+        }else if(count3 == 60){
           count3 = 0;
           time3.innerHTML = count3;
         }
@@ -52,26 +52,21 @@ $(document).ready(function(){
       intervalId2 = setInterval(function(){
         //ここに処理を書く
         count2++;
-        if(count2<=9 ){
+        if(count2<=59 ){
           time2.innerHTML = count2;
-        }else if(count2 == 10){
+        }else if(count2 == 60){
           count2 = 0;
           time2.innerHTML = count2;
         }
-      },10000);
+      },60000);
     });
     
     $(function(){
       intervalId1 = setInterval(function(){
         //ここに処理を書く
         count1++;
-        if(count1<=9 ){
-          time1.innerHTML = count1;
-        }else if(count1 == 10){
-          count1 = 0;
-          time1.innerHTML = count1;
-        }
-      },100000);
+        time1.innerHTML = count1;
+      },3600000);
     });
     /*スタートボタンここまで*/
     
