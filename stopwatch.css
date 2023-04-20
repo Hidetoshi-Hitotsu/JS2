@@ -1,0 +1,14 @@
+
+.stopwatch_Container{
+  margin: 20px;
+}
+
+.stopwatch{
+  font-size: 30px;
+}
+
+button{
+  height: 50px;
+  width: 150px;
+  font-size: 16px;
+}
